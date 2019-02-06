@@ -199,3 +199,12 @@
   185  git remote -v
   186  git branch -a
   187  history > git.txt
+  188  ls
+  189  vi git.txt 
+  190  vi calc.py
+  191  git status
+  192  git add .
+  193  git commit -m "add v"
+  194  git log
+  195  git push -u origin master
+  196  history > git.txt
