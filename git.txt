@@ -1,0 +1,201 @@
+    1  yum update -y
+    2  yum install -y yum-utils   device-mapper-persistent-data   lvm2
+    3  yum-config-manager     --add-repo     https://download.docker.com/linux/centos/docker-ce.repo
+    4   yum install docker-ce docker-ce-cli containerd.io
+    5  systemctl status docker
+    6  systemctl start docker
+    7  systemctl status docker
+    8  systemctl enable docker
+    9  docker
+   10  docker run debian echo "Hello world:
+
+
+
+
+
+
+"
+   11  docker images
+   12  docker container ls
+   13  docker container ls -a
+   14  docker run debian echo "Hello world:
+
+
+
+
+
+
+"
+   15  docker container ls -a
+   16  docker run -i -t debian bash
+   17  docker run -h mycontainer -i -t debian bash
+   18  docker run -it --name cowsay -h cowsay debian bash
+   19  docker commit cowsay test/cowsayimage
+   20  docker images
+   21  docker run test/cowsayimage /usr/games/cowsay "chup"
+   22  docker top
+   23  mkdir test
+   24  cd test/
+   25  docker container ls -a
+   26  docker startfd92692fb8b8  
+   27  docker start fd92692fb8b8  
+   28  docker container ls -a
+   29  docker container ls
+   30  docker exec -t fd92692fb8b8  bash
+   31  docker start fd92692fb8b8  
+   32  docker exec -t fd92692fb8b8  bash
+   33  docker start fd92692fb8b8
+   34  docker start c1fae22c4842
+   35  docker exec -t c1fae22c4842   bash
+   36  docker start 39fd186ee462 
+   37  docker exec -t 39fd186ee462   bash
+   38  docker container ls
+   39  touch Dockerfile
+   40  vi Dockerfile
+   41  docker build -t test/cowsay-dockerfile .
+   42  vi Dockerfile
+   43  docker images
+   44  docker run test/cowsay-dockerfile /usr/games/cowsay "Hey"
+   45   _____
+   46  < Hey >
+   47   -----
+   48          \   ^__^
+   49           \  (oo)\_______
+   50              (__)\       )\/\
+   51                  ||----w |
+   52                  ||     ||
+   53  docker run test/cowsay-dockerfile /usr/games/cowsay "Hey"
+   54  vo Dockerfile 
+   55  vi Dockerfile 
+   56  docker run test/cowsay-dockerfile "Hey"
+   57  vi Dockerfile 
+   58  docker build -t test/cowsay-dockerfile .
+   59* [A
+   60  vi Dockerfile 
+   61  docker build -t test/cowsay-dockerfile .
+   62  docker run test/cowsay-dockerfile "Hey"
+   63  vi Dockerfile 
+   64  docker container ls -d
+   65  docker container ls
+   66  vi Dockerfile 
+   67  docker run --name mynginx -d nginx
+   68  docker ps
+   69  docker container ls
+   70  curl localhost
+   71  docker run --name mynginix1 -d -p 81:80 nginx
+   72  docker ps
+   73  curl localhost
+   74  docker run --name mynginix -d -p 81:80 nginx
+   75  curl localhost
+   76  docker ps
+   77  curl localhost:81
+   78  yum install -y git
+   79  git -v
+   80  yum install -y git 2
+   81  yum install groupinstall "Development Tools"
+   82  yum install curl-devel expat-devel gettext-devel openssl-devel zlib-devel
+   83  yum install gcc perl-ExtUtils-MakeMaker
+   84  yum groupinstall
+   85  yum groupinstall "Development Tools"
+   86  cd /usr/src
+   87  wget https://www.kernel.org/pub/software/scm/git/git-2.17.0.tar.gz
+   88  yum install wget -y
+   89  wget https://www.kernel.org/pub/software/scm/git/git-2.17.0.tar.gz
+   90  ls
+   91  tar -xzf git-2.17.0.tar.gz 
+   92  ls
+   93  history
+   94  cd git-2.17.0
+   95  ls
+   96  history
+   97  make prefix=/usr/local/git all
+   98  make prefix=/usr/local/git install
+   99  echo "export PATH=/usr/local/git/bin:$PATH" >> /etc/bashrc
+  100  history
+  101  source /etc/bashrc
+  102  cd /
+  103  git
+  104  git --version
+  105  yum remove git
+  106  yum install git
+  107  git --version
+  108  make prefix=/usr/local/git install
+  109  source /etc/bashrc
+  110  git --version
+  111  cd /home
+  112  mkdir local-repo/
+  113  cd local-repo/
+  114  vi helo.java
+  115  yum install -y jdk
+  116  yum install -y java
+  117  yum install -y java-1.8.0-openjdk-devel
+  118* 
+  119  yum install -y java-1.8.0-openjdk
+  120* 
+  121  vi helo.java
+  122  javac helo.java 
+  123  java helo
+  124  java helo.java
+  125  javac helo.java 
+  126  vi helo.java
+  127  java HelloWorld
+  128  vi helo.java
+  129  abcdefghijklmnopqrstuvwxyz
+  130  git staus
+  131  git status
+  132  git init
+  133  git status
+  134  ls -la
+  135  cd .git/
+  136  ls
+  137  cd ..
+  138  rm -rf .git/
+  139  git status
+  140  git config --global user.name "nayanpatel786"
+  141  git config --global user.email "nayan8172@gmail.com"
+  142  git config --list
+  143  touch .ds_store
+  144  touch .myfile
+  145  touch testfile
+  146  touch calc.py
+  147  ls 
+  148  git status
+  149  git init
+  150  git status
+  151  git add calc.py 
+  152  git status
+  153  git add helo.java 
+  154  git status
+  155   GIT REST
+  156   GIT RESET
+  157  git reset
+  158  git status
+  159  git add -A
+  160  git status
+  161  git reset
+  162  git status
+  163  touch .gitignore
+  164  ls
+  165  ls -la
+  166* 
+  167  vi .gitignore 
+  168  git status
+  169  git add calc.py 
+  170  git status
+  171  git commit -m "initial commit"
+  172  git status
+  173  git log
+  174  vi calc.py
+  175  git status
+  176  git commit -m "initial commit"
+  177  git log
+  178  git add .
+  179  git status
+  180  git commit -m add"
+  181  git commit -m "add"
+  182  git log
+  183  git remote add origin https://github.com/nayanpatel786/mfunction.git
+  184  git push -u origin master
+  185  git remote -v
+  186  git branch -a
+  187  history > git.txt
